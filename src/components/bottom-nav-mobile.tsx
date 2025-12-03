@@ -17,7 +17,7 @@ export function BottomNavMobile() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-800/80 bg-slate-950/80 backdrop-blur-xl md:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/80 backdrop-blur-xl md:hidden">
       <div className="mx-auto flex max-w-2xl items-center justify-between px-3 py-2">
         {links.map((link) => {
           const Icon = link.icon;
@@ -28,15 +28,15 @@ export function BottomNavMobile() {
               key={link.href}
               href={link.href}
               className={cn(
-                'flex flex-1 flex-col items-center gap-0.5 text-[11px] text-slate-400',
-                active && 'text-white'
+                'flex flex-1 flex-col items-center gap-0.5 text-[11px] text-muted-foreground',
+                active && 'text-foreground'
               )}
               aria-label={link.label}
             >
               <span
                 className={cn(
                   'flex h-8 w-8 items-center justify-center rounded-full transition-colors',
-                  active ? 'bg-slate-800' : 'bg-transparent'
+                  active ? 'bg-accent' : 'bg-transparent'
                 )}
               >
                 <Icon className="h-4 w-4" />

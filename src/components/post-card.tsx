@@ -20,7 +20,7 @@ export function PostCard({ label, caption, timestamp, children }: PostCardProps)
       className="overflow-hidden rounded-3xl border border-border bg-card shadow-insta-soft"
     >
       <div className="flex items-center justify-between px-4 pt-3 text-xs text-muted-foreground">
-        <span className="font-semibold uppercase tracking-[0.16em] text-slate-300">
+        <span className="font-semibold uppercase tracking-[0.16em] text-muted-foreground">
           {label}
         </span>
         <span>{timestamp}</span>

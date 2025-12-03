@@ -20,7 +20,7 @@ const feedVariants = {
 export function HomeClient() {
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-6">
-      <section className="flex flex-col items-center gap-6 border-b border-slate-800 pb-6 pt-2 sm:flex-row sm:items-start">
+      <section className="flex flex-col items-center gap-6 border-b border-border pb-6 pt-2 sm:flex-row sm:items-start">
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center">
           <StoryRing
             size={200}
@@ -29,14 +29,14 @@ export function HomeClient() {
           />
           <div className="text-center sm:text-left">
             <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">@anas_lari</h1>
-            <p className="mt-1 max-w-md text-sm text-slate-300">
+            <p className="mt-1 max-w-md text-sm text-muted-foreground">
               Hi, I&apos;m Anas Lari — Flutter Developer, AI Engineer &amp; Full-Stack Builder.
               I craft intelligent, delightful experiences across mobile, web, and AI.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
               <Button
                 size="sm"
-                className="gap-2 rounded-full bg-white text-slate-900 hover:bg-slate-100 dark:bg-slate-100 dark:hover:bg-white"
+                className="gap-2 rounded-full bg-foreground text-background hover:bg-foreground/90"
                 asChild
               >
                 <a href="#contact">
@@ -64,7 +64,7 @@ export function HomeClient() {
             caption="Building intelligent apps, agents, and experiences with Flutter, Next.js, and modern AI stacks."
             timestamp="Today"
           >
-            <p className="text-sm text-slate-200">
+            <p className="text-sm text-muted-foreground">
               I love shipping things end-to-end — from pixel-perfect mobile UIs to production-grade AI agents and cloud backends.
               Most of my work lives on GitHub and Kaggle, where I experiment with deep learning, multimodal models, and tools that feel magical.
             </p>
@@ -77,7 +77,7 @@ export function HomeClient() {
             caption="The tools I reach for when building fast, beautiful experiences."
             timestamp="Recently"
           >
-            <div className="flex flex-wrap gap-2 text-xs font-medium text-slate-100">
+            <div className="flex flex-wrap gap-2 text-xs font-medium text-foreground">
               {[
                 'Flutter',
                 'Dart',
@@ -96,7 +96,7 @@ export function HomeClient() {
               ].map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full bg-slate-800/80 px-3 py-1 text-[11px] shadow-sm shadow-slate-950/40"
+                  className="rounded-full bg-secondary px-3 py-1 text-[11px] shadow-sm"
                 >
                   {tag}
                 </span>
@@ -111,7 +111,7 @@ export function HomeClient() {
             caption="AI-native experiences, multimodal agents, and delightful mobile apps."
             timestamp="Now"
           >
-            <ul className="list-disc space-y-1 pl-4 text-sm text-slate-200">
+            <ul className="list-disc space-y-1 pl-4 text-sm text-muted-foreground">
               <li>Production-grade AI agents that combine text, vision, and structured tools.</li>
               <li>Beautiful Flutter apps that feel as smooth as native Instagram.</li>
               <li>Developer tools and workflows that make building with AI feel effortless.</li>
